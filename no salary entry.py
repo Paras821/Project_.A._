@@ -12,5 +12,5 @@ myresult = mycursor.fetchall()
 for x in myresult:
     print(x)
 
-print( " None \n All employees have their salary entried ")
+print(" None \n All employees have their salaries entried ")
 
