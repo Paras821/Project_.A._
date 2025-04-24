@@ -5,7 +5,7 @@ conn = mysql.connector.MySQLConnection(host="localhost", user="root", password="
 
 mycursor = conn.cursor()
 
-sql = "SELECT dept, COUNT(id) FROM employees GROUP BY dept"
+sql = "SELECT dept, SUM(salary) FROM employees GROUP BY dept"
 
 mycursor.execute(sql)
 
