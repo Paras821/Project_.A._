@@ -13,7 +13,7 @@ myresult = mycursor.fetchall()
 
 if myresult:
     for name,salary in myresult:
-        print(f"{name} earns a salary of {salary}")
+        print(f"{name} earns a salary of Rs.{salary}")
 else:
     print("No employees earning the same amount of salaries")
 
