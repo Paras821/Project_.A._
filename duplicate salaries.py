@@ -16,5 +16,5 @@ if not myresult:
 else:
     print("Duplicate salaries:")
     for salary, count in myresult:
-        print(f"Salary:{salary}, Count:{count}")
+        print(f"Salary: Rs.{salary}, Count:{count}")
 
