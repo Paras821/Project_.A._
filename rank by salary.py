@@ -12,5 +12,5 @@ mycursor.execute(sql)
 myresult = mycursor.fetchall()
 
 for x in myresult:
-    print(f"ID: {x[0]}, Name: {x[1]}, Salary: {x[2]}, Rank: {x[3]}")
+    print(f"ID: {x[0]}, Name: {x[1]}, Salary: Rs.{x[2]}, Rank: {x[3]}")
 
