@@ -5,7 +5,7 @@ conn = mysql.connector.MySQLConnection(host="localhost", user="root", password="
 
 mycursor = conn.cursor()
 
-sql = "SELECT e.name, d.name, d.location FROM employees e JOIN departments d ON e.dept = d.name WHERE location = 'Paris' LIMIT 1"
+sql = "SELECT e.name, d.name, d.location FROM employees e JOIN departments d ON e.dept = d.name WHERE location = 'Paris'"
 
 mycursor.execute(sql)
 
