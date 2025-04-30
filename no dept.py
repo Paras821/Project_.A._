@@ -5,7 +5,7 @@ conn = mysql.connector.MySQLConnection(host="localhost", user="root", password="
 
 mycursor = conn.cursor()
 
-mycursor.execute("SELECT * FROM employees WHERE dept = NULL")
+mycursor.execute("SELECT * FROM employees WHERE dept IS NULL")
 
 myresult = mycursor.fetchall()
 
