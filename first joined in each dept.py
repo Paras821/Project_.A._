@@ -5,7 +5,7 @@ conn = mysql.connector.MySQLConnection(host="localhost", user="root", password="
 
 mycursor = conn.cursor()
 
-sql = "SELECT e.id, e.name, e.dept, e.joined FROM employees e INNER JOIN (SELECT dept, MIN(joined) AS first_to_join FROM employees GROUP BY dept) first_joined ON e.dept = first_joined.dept AND e.joined =first_joined.first_to_join"
+sql = "SELECT e.id, e.name, e.dept, e.joined FROM employees e INNER JOIN (SELECT dept, MIN(joined) AS first_to_join FROM employees GROUP BY dept) first_joined ON e.dept = first_joined.dept AND e.joined = first_joined.first_to_join"
 
 mycursor.execute(sql)
 
